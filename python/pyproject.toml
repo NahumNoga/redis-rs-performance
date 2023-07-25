@@ -9,9 +9,11 @@ packages = [
 
 [tool.poetry.scripts]
 start = "src.start:start"
+add = "src.add:start"
+read = "src.read:start"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.8"
 redis = "^4.5.3"
 
 [build-system]
