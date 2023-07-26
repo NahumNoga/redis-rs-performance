@@ -7,6 +7,9 @@ default-run = "main"
 [[bin]]
 name = "main"
 path = "src/main.rs"
+[[bin]]
+name = "read"
+path = "src/read.rs"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

@@ -6,6 +6,7 @@ def set() -> None:
     conn = redis.Redis.from_url(redis_url)
 
     large_data = bytearray(49152000 * 10)
+    large_data[2000] = 5
     large_data_bytes = bytes(large_data)
     start_set = time.time()
     conn.set("my_large_data", large_data_bytes)
