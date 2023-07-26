@@ -1,12 +1,12 @@
 import redis
 import time
 
-def start() -> None:
+def read() -> None:
     redis_url = "redis://localhost:6380/0"
     conn = redis.Redis.from_url(redis_url)
 
     start = time.time()
-    my_large_data_stream = conn.xread(streams={"my_large_data_stream": b'$'}, count=None, block=1000)
+    my_large_data_stream = conn.xread(streams={"my_large_data_stream": b'0-0'}, count=None, block=0)
     read_time = time.time() - start
     if len(my_large_data_stream) > 0:
         [[stream, [[number, parts]]]] = my_large_data_stream
@@ -16,7 +16,7 @@ def start() -> None:
     else:
         print(my_large_data_stream)
     start = time.time()
-    my_large_data_stream = conn.xread(streams={"my_large_data_stream": b'1-0'}, count=None, block=1000)
+    my_large_data_stream = conn.xread(streams={"my_large_data_stream": b'$'}, count=None, block=0)
     read_time = time.time() - start
     if len(my_large_data_stream) > 0:
         [[stream, [[number, parts]]]] = my_large_data_stream

@@ -8,9 +8,10 @@ packages = [
 ]
 
 [tool.poetry.scripts]
-start = "src.start:start"
-add = "src.add:start"
-read = "src.read:start"
+set = "src.set:set"
+get = "src.get:get"
+add = "src.add:add"
+read = "src.read:read"
 
 [tool.poetry.dependencies]
 python = "^3.8"

@@ -1,4 +1,8 @@
-echo @@@@@@@@@@@@@ PYTHON @@@@@@@@@@@@@@@@@@@@
+echo @@@@@@@ PYTHON SET AND GET @@@@@@@@@@@@@@
+(cd python && poetry run set && poetry run get)
+echo @@@@@@@@@@@@@ END OF PYTHON @@@@@@@@@@@@@
+
+echo @@@@@ PYTHON ADD AND READ STREAM @@@@@@@@
 (cd python && (poetry run add & poetry run read))
 echo @@@@@@@@@@@@@ END OF PYTHON @@@@@@@@@@@@@
 
