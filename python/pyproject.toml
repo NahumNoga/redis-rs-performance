@@ -12,10 +12,15 @@ set = "src.set:set"
 get = "src.get:get"
 add = "src.add:add"
 read = "src.read:read"
+consumer = "src.kafka.consumer:start"
+producer = "src.kafka.producer:start"
+server = "src.socket.server:start"
+client = "src.socket.client:start"
 
 [tool.poetry.dependencies]
 python = "^3.8"
 redis = "^4.5.3"
+kafka-python = "^2.0.2"
 
 [build-system]
 requires = ["poetry-core"]

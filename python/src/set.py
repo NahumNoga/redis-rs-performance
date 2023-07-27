@@ -5,7 +5,7 @@ def set() -> None:
     redis_url = "redis://localhost:6380/0"
     conn = redis.Redis.from_url(redis_url)
 
-    large_data = bytearray(49152000 * 10)
+    large_data = bytearray(49152000 * 4)
     large_data[2000] = 5
     large_data_bytes = bytes(large_data)
     start_set = time.time()

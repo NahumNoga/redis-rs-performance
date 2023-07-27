@@ -1,10 +1,10 @@
-# echo @@@@@@@@@@@@ PYTHON SET @@@@@@@@@@@@@@
-# (cd python && poetry run set)
-# echo @@@@@@@@@@@@@ END OF SET @@@@@@@@@@@@@
+echo @@@@@@@@@@@@ PYTHON SET @@@@@@@@@@@@@@
+(cd python && poetry run set)
+echo @@@@@@@@@@@@@ END OF SET @@@@@@@@@@@@@
 
-# echo @@@@@@@ PYTHON  GET @@@@@@@@@@@@@@
-# (cd python && poetry run get)
-# echo @@@@@@@@@@@@@ END OF PYTHON GET @@@@@@@@@@@@@
+echo @@@@@@@ PYTHON  GET @@@@@@@@@@@@@@
+(cd python && poetry run get)
+echo @@@@@@@@@@@@@ END OF PYTHON GET @@@@@@@@@@@@@
 
 # echo @@@@@ PYTHON ADD AND READ STREAM @@@@@@@@
 # (cd python && (poetry run add & poetry run read))
